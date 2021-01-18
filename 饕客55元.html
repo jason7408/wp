@@ -5,19 +5,16 @@
     <title>饕客55元</title>
 	<style>
       body {height:8.5in}
-      
 	  #header {
 		position: relative;
         width:450px; 
         left:5%;
       }
-
       #right {
 		position: absolute;
         width:800px; height:600px;
-        top:12%; left:600px;
+        top:22%; left:600px;
       }
-      
 	  #left {
 		position: relative;
         width:450px; 
@@ -30,58 +27,33 @@
 	<table id="header" border="0">
 		<td colspan="4" >
 			<h1 align="center"> 饕客55元 </h1>
+			<h3 align="center"> 訂購專線  02-24694634 </h3>
 		</td>
 	</table>
 	<table id="left" border="1">
 	 <tr>
-		<th colspan="4">每個便當一道主菜一道副菜/一道主菜+30元 一道副菜+10元</th>
+		<th colspan="4">每個便當一道主菜一道副菜 <br>一道主菜+30元 / 一道副菜+10元</th>
      </tr>
-	 <tr>
-         <th>主餐菜色</th>
-         <th>價格</th>
-		 <th>主餐菜色</th>
-         <th>價格</th>
-     </tr>
-     <tr>
-         <td>黑胡椒排骨飯</td>
-         <td>60</td>
-		 <td>蜜汁雞排飯</td>
-         <td>60</td>
-     <tr>
-         <td>蜜汁腿排飯</td>
-         <td>60</td>
-		 <td>蜜汁雞腿飯</td>
-          <td>60</td>
-     </tr>       
-     <tr>
-         <td>烤雞排飯</td>
-         <td>60</td>
-		 <td>烤雞腿飯</td>
-         <td>60</td>
-     </tr>
-     <tr>
-         <td>炸雞腿飯</td>
-         <td>60</td>
-		 <td>鮮魚飯</td>
-         <td>60</td>
-     </tr>
-     <tr>
-         <td>控肉飯</td>
-         <td>60</td>
-		 <td>燒肉飯</td>
-         <td>60</td>
-     </tr>
-     <tr>
-         <td>炸大雞腿飯</td>
-         <td>60</td>
-		 <td></td>
-         <td></td>
-      </tr>
-	 <tr>
-	    <th colspan="4">02-24694634</th>
-	 </tr>	
+    <script>      // 建立二維陣列
+       var employee = new Array();
+       employee[0] = ["黑胡椒排骨飯","60","蜜汁雞排飯","60"];
+       employee[1] = [ "蜜汁腿排飯","60","蜜汁雞腿飯","60"];
+       employee[2] = ["烤雞排飯","60","烤雞腿飯","60"];
+       employee[3] = ["炸雞腿飯","60","鮮魚飯","60"];
+       employee[4] = ["控肉飯","60","燒肉飯","60"];
+       employee[5] = ["炸大雞腿飯","60"," "," "];     
+       document.write("<table id='left' border='1'>");	  
+       document.write("<th>主 餐 菜 色 </th>","<th>價 錢</th>","<th> 主 餐 菜 色 </th>","<th>價 錢</th>");
+       document.write("</tr>");         //使用巢狀迴圈顯示二維陣列元素的資料
+        for (var i = 0; i < employee.length; i++) {
+            document.write("<tr>");
+            for (var k = 0; k < employee[i].length; k++) {
+                document.write("<td>" + employee[i][k] + "</td>");
+            }
+            document.write("</tr>");
+        }
+    </script>	 
     </table>
     <iframe id="right" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=饕客55元&z=16&output=embed&t=></iframe>
-	
 </body>
 </html>

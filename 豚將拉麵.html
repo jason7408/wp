@@ -11,13 +11,11 @@
         width:450px; 
         left:5%;
       }
-
       #right {
 		position: absolute;
         width:800px; height:600px;
-        top:12%; left:600px;
+        top:22%; left:600px;
       }
-      
 	  #left {
 		position: relative;
         width:450px; 
@@ -25,163 +23,52 @@
         background-color:lightgreen
       }
 	</style>
-	
 </head>
-
 <body>
 	<table id="header" border="0">
-		<td colspan="4" >
+		<td colspan="4">
 			<h1 align="center"> 豚將拉麵 </h1>
+			<h3 align="center"> 訂購專線  02-24620775 </h3>
 		</td>
 	</table>
     <table id="left" border="1">
     <tr>
 	 <th colspan="4">麵無限量供應  吃到飽(例假日除外)</th>  
     </tr>
-	  <tr>
-	   <th colspan="2">北海道風</th>
-	   <th colspan="2">異國風</th>
-	  </tr>
-	   <tr>
-         <td>鹽味拉麵</td>
-         <td>79元</td>
-		 <td>南洋風味拉麵</td>
-         <td>109元</td>
-       </tr>
-       <tr>
-         <td>蛤蜊拉麵</td>
-         <td>99元</td>
-		 <td>朝日太雞拉麵</td>
-         <td>120元</td>
-       <tr>
-         <td>旭川醬油拉麵</td>
-         <td>99元</td>
-		 <td>朝鮮辛拉麵</td>
-          <td>130元</td>
-       </tr>       
-       <tr>
-         <td>北海道味噌拉麵</td>
-         <td>120元</td>
-		 <td>火焰貢王拉麵</td>
-         <td>150元</td>
-       </tr>
-	  <tr>
-	    <th colspan="2">關東風</th>
-	    <th colspan="2">關西風</th>
-	  </tr>
-       <tr>
-         <td>醬油拉麵</td>
-         <td>69元</td>
-		 <td>招牌豚骨拉麵</td>
-         <td>99元</td>
-      </tr>
-      <tr>
-         <td>大江戶沾麵</td>
-         <td>89元</td>
-		 <td>味噌拉麵</td>
-         <td>99元</td>
-      </tr>
-      <tr>
-         <td>和風拉麵</td>
-         <td>89元</td>
-		 <td>地獄拉麵</td>
-         <td>99元</td>
-       </tr>
-	   <tr>
-         <td>醬油豚骨拉麵</td>
-         <td>99元</td>
-		 <td>赤鬼担担麵</td>
-         <td>99元</td>
-      </tr>
-      <tr>
-         <td>辣味噌豚骨拉麵</td>
-         <td>109元</td>
-		 <td>名古屋台灣拉麵</td>
-         <td>99元</td>
-      </tr>
-	   <tr>
-	    <th colspan="2">九州風</th>
-	    <th colspan="2">加料</th>
-	  </tr>
-       <tr>
-         <td>熊本黑蒜拉麵</td>
-         <td>99元</td>
-		 <td>起士片</td>
-         <td>10元</td>
-      </tr>
-      <tr>
-         <td>特濃味噌拉麵</td>
-         <td>129元</td>
-		 <td>溏心蛋</td>
-         <td>20元</td>
-      </tr>
-      <tr>
-         <td>夜虎拉麵</td>
-         <td>129元</td>
-		 <td>玉米粒</td>
-         <td>20元</td>
-       </tr>
-	   <tr>
-         <td>赤虎拉麵</td>
-         <td>139元</td>
-		 <td>高湯</td>
-         <td>30元</td>
-      </tr>
-      <tr>
-         <td>特濃地獄拉麵</td>
-         <td>139元</td>
-		 <td>叉燒肉</td>
-         <td>40元</td>
-      </tr>
-	   <tr>
-         <td>特濃招牌豚骨拉麵</td>
-         <td>139元</td>
-		 <td></td>
-         <td></td>
-      </tr>
-      <tr>
-	    <th colspan="2">唐揚炸物</th>
-	    <th colspan="2">私房料理</th>
-	  </tr>
-       <tr>
-         <td>蔬菜可樂餅</td>
-         <td>39元</td>
-		 <td>川燙蔬菜</td>
-         <td>39元</td>
-      </tr>
-      <tr>
-         <td>艾曼塔起司薯條</td>
-         <td>39元</td>
-		 <td>特製韓國泡菜</td>
-         <td>39元</td>
-      </tr>
-      <tr>
-         <td>甜不辣</td>
-         <td>39元</td>
-		 <td>鱈蟹柳佐和風醬</td>
-         <td>39元</td>
-       </tr>
-	   <tr>
-         <td>酥皮豆腐</td>
-         <td>59元</td>
-		 <td>辣味噌蔬菜</td>
-         <td>39元</td>
-      </tr>
-      <tr>
-         <td>特製豬排</td>
-         <td>69元</td>
-		 <td>和風日式炸雞</td>
-         <td>69元</td>
-      </tr>
-	   <tr>
-         <td>北海道起士豬排</td>
-         <td>69元</td>
-		 <td>春川起士炸雞</td>
-         <td>79元</td>
-      </tr>
-	  <tr>
-	    <th colspan="4">02-24620775</th>
-	  </tr>
+    <script>      // 建立二維陣列
+       var employee = new Array();
+	   employee[0] = ["鹽味拉麵","79元","南洋風味拉麵","109元"];
+       employee[1] = ["蛤蜊拉麵","99元","朝日太雞拉麵","120元"];
+       employee[2] = ["旭川醬油拉麵","99元","朝鮮辛拉麵","130元"];
+       employee[3] = ["北海道味噌拉麵","120元","火焰貢王拉麵","150元"];
+       employee[4] = ["醬油拉麵","69元","招牌豚骨拉麵","99元"];
+       employee[5] = ["大江戶沾麵","89元","味噌拉麵","99元"];    
+       employee[6] = ["和風拉麵","89元","地獄拉麵","99元"];
+       employee[7] = ["醬油豚骨拉麵","99元","赤鬼担担麵","99元"];
+       employee[8] = ["辣味噌豚骨拉麵","109元","名古屋台灣拉麵","99元"];
+	   employee[9] = ["熊本黑蒜拉麵","99元","起士片","10元"];
+       employee[10] = ["特濃味噌拉麵","129元","溏心蛋","20元"];
+       employee[11] = ["夜虎拉麵","129元","玉米粒","20元"];
+       employee[12] = ["赤虎拉麵","139元","高湯","30元"];
+       employee[13] = ["特濃地獄拉麵","139元","叉燒肉","40元"];
+       employee[14] = ["特濃招牌豚骨拉麵","139元"];    
+       employee[15] = ["蔬菜可樂餅","39元","川燙蔬菜","39元"];
+       employee[16] = ["艾曼塔起司薯條","39元","特製韓國泡菜","39元"];
+       employee[17] = ["甜不辣","39元","鱈蟹柳佐和風醬","39元"];
+	   employee[18] = ["酥皮豆腐","59元","辣味噌蔬菜","39元"];
+       employee[19] = ["特製豬排","69元","和風日式炸雞","69元"];
+       employee[20] = ["北海道起士豬排","69元","春川起士炸雞","79元"];
+       document.write("<table id='left' border='1'>");	  
+       document.write("<th>主 餐 菜 色 </th>","<th>價 錢</th>","<th> 主 餐 菜 色 </th>","<th>價 錢</th>");
+       document.write("</tr>");         //使用巢狀迴圈顯示二維陣列元素的資料
+        for (var i = 0; i < employee.length; i++) {
+            document.write("<tr>");
+            for (var k = 0; k < employee[i].length; k++) {
+                document.write("<td>" + employee[i][k] + "</td>");
+            }
+            document.write("</tr>");
+        }
+    </script>	 
     </table>
 	<iframe id="right" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=豚將拉麵基隆海大店&z=16&output=embed&t=></iframe>
 </body>

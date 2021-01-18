@@ -14,7 +14,7 @@
       #right {
 		position: absolute;
         width:800px; height:600px;
-        top:12%; left:600px;
+        top:22%; left:600px;
       }
 	  #left {
 		position: relative;
@@ -24,80 +24,40 @@
       }
 	</style>
 </head>
-
 <body>
 	<table id="header" border="0">
 		<td colspan="4" >
 			<h1 align="center"> 鴨珍鄉港式燒臘 </h1>
+			<h3 align="center"> 訂購專線  02-24699693 </h3>
 		</td>
 	</table>
-    <table id="left" border="1">
-	 <tr>
+	<table id="left" border="1">
+	<tr>
        <th colspan="4">每個便當皆附湯品和飲品</th>
-     </tr>
-	 <tr>
-         <th>主餐菜色</th>
-         <th>價格</th>
-         <th>主餐菜色</th>
-         <th>價格</th>
-     </tr>
-	 <tr>
-          <td>排骨飯</td>
-          <td>75</td>
-          <td>控肉飯</td>
-		  <td>80</td>
-     </tr>
-	 <tr>
-          <td>燒肉飯</td>
-          <td>80</td>
-          <td>香蔥油雞飯</td>
-		  <td>80</td>
-     </tr>
-	 <tr>
-          <td>蜜汁叉燒飯</td>
-          <td>80</td>
-          <td>脆皮烤鴨販</td>
-		  <td>80</td>
-     </tr>
-	 <tr>
-	      <td>美味雙拼飯</td>
-          <td>85</td>
-          <td>酥炸雞腿飯</td>
-		  <td>85</td>
-     </tr>
-     <tr>
-         <td>玫瑰雞腿飯</td>
-         <td>85</td>
-         <td>蜜汁雞腿飯</td>
-         <td>85</td>
-     </tr>
-	 <tr>
-         <td>招牌三寶飯</td>
-         <td>90</td>
-         <td>蔥油雞腿飯</td>
-         <td>95</td>
-     </tr>
-	 <tr>
-         <td>脆皮雞腿飯</td>
-         <td>100</td>
-         <td></td>
-         <td></td>
-     </tr>
-	 <tr>
-         <td>香腸一兩</td>
-         <td>20</td>
-         <td>叉燒一兩</td>
-         <td>25</td>
-     </tr>
-     <tr>
-         <td>油雞</td>
-         <td>時價</td>
-         <td>烤雞</td>
-         <td>時價</td>
-     </tr>
-     <tr>
-	    <th colspan="4">02-24699693</th>
-	 </tr> 
+    </tr>
+    <script>      // 建立二維陣列
+       var employee = new Array();
+       employee[0] = ["排骨飯","75","控肉飯","80"];
+       employee[1] = ["燒肉飯","80","香蔥油雞飯","80"];
+       employee[2] = ["蜜汁叉燒飯","80","脆皮烤鴨飯","80"];
+       employee[3] = ["美味雙拼飯","85","酥炸雞腿飯","85"];
+       employee[4] = ["玫瑰雞腿飯","85","蜜汁雞腿飯","85"];
+       employee[5] = ["招牌三寶飯","90","蔥油雞腿飯","95"];    
+       employee[6] = ["脆皮雞腿飯","100"," "," "];
+       employee[7] = ["香腸一兩","20","叉燒一兩","25"];
+       employee[8] = ["油雞","時價","烤雞","時價"];
+	   
+       document.write("<table id='left' border='1'>");	  
+       document.write("<th>主 餐 菜 色 </th>","<th>價 錢</th>","<th> 主 餐 菜 色 </th>","<th>價 錢</th>");
+       document.write("</tr>");         //使用巢狀迴圈顯示二維陣列元素的資料
+        for (var i = 0; i < employee.length; i++) {
+            document.write("<tr>");
+            for (var k = 0; k < employee[i].length; k++) {
+                document.write("<td>" + employee[i][k] + "</td>");
+            }
+            document.write("</tr>");
+        }
+    </script>	 
     </table>
     <iframe id="right" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=鴨珍鄉港式燒臘&z=16&output=embed&t=></iframe>
 </body>

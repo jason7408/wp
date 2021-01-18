@@ -11,13 +11,11 @@
         width:450px; 
         left:5%;
       }
-
       #right {
 		position: absolute;
         width:800px; height:600px;
-        top:12%; left:600px;
+        top:22%; left:600px;
       }
-      
 	  #left {
 		position: relative;
         width:450px; 
@@ -26,71 +24,34 @@
       }
 	</style>
 </head>
-
 <body>
 	<table id="header" border="0">
 		<td colspan="4" >
 			<h1 align="center"> 星翔快餐 </h1>
+			<h3 align="center"> 訂購專線  02-24626759 </h3>
 		</td>
 	</table>
-	<table id="left" border="1">
-     <tr>
-         <th>主餐菜色</th>
-         <th>價格</th>
-		 <th>主餐菜色</th>
-         <th>價格</th>
-     </tr>
-     <tr>
-         <td>咖哩便當</td>
-         <td>50</td>
-		 <td>合菜便當</td>
-         <td>50</td>
-     <tr>
-         <td>日式豬排</td>
-         <td>70</td>
-		 <td>無骨雞排</td>
-          <td>70</td>
-     </tr>       
-     <tr>
-         <td>控肉飯</td>
-         <td>70</td>
-		 <td>蜜汁排骨</td>
-         <td>70</td>
-     </tr>
-     <tr>
-         <td>經典排骨</td>
-         <td>70</td>
-		 <td>滷排骨</td>
-         <td>70</td>
-     </tr>
-     <tr>
-         <td>香酥排骨</td>
-         <td>70</td>
-		 <td>棒棒招牌飯</td>
-         <td>70</td>
-     </tr>
-     <tr>
-         <td>脆皮雞排</td>
-         <td>75</td>
-		 <td>蔥油雞腿</td>
-         <td>70</td>
-     </tr>
-     <tr>
-	   <td>滷油雞腿</td>
-         <td>70</td>
-          <td>轟炸大雞腿</td>
-          <td>90</td>
-     </tr>
-	 <tr>
-	     <td>炸魯大雞腿</td>
-         <td>90</td>
-		 <td>魯香香大雞腿</td>
-         <td>90</td>
-	 </tr>
-	 <tr>
-	    <th colspan="4">02-24626759</th>
-	 </tr>
-    </table>
-    <iframe id="right" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=星翔快餐&z=16&output=embed&t=></iframe>
+	<script>         // 建立二維陣列
+       var employee = new Array();
+       employee[0] = ["咖哩便當","50","合菜便當","50"];
+       employee[1] = [ "日式豬排","70","無骨雞排","70"];
+       employee[2] = ["控肉飯","70","蜜汁排骨","70"];
+       employee[3] = ["經典排骨","70","滷排骨","70"];
+       employee[4] = ["香酥排骨","70","棒棒招牌飯","70"];
+       employee[5] = ["脆皮雞排","75","蔥油雞腿","70"];        
+       employee[6] = ["滷油雞腿","70","轟炸大雞腿","90"];
+       employee[7] = ["炸魯大雞腿","90","魯香香大雞腿","90"];
+       document.write("<table id='left' border='1'>");
+       document.write("<th>主 餐 菜 色 </th>","<th>價 錢</th>","<th> 主 餐 菜 色 </th>","<th>價 錢</th>");
+       document.write("</tr>");         //使用巢狀迴圈顯示二維陣列元素的資料
+       for (var i = 0; i < employee.length; i++) {
+            document.write("<tr>");
+            for (var k = 0; k < employee[i].length; k++) {
+                document.write("<td>" + employee[i][k] + "</td>");
+            }
+            document.write("</tr>");
+       }
+	</script>
+	<iframe id="right" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src=https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=星翔快餐&z=16&output=embed&t=></iframe>
 </body>
 </html>
